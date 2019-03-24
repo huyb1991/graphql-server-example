@@ -15,6 +15,7 @@ const typeDefs = gql`
   }
 
   type Query {
+    allAuthors: [Authors!]!
     author(id: Int!): Author
     allPosts: [Post!]!
     post(id: Int!): Post

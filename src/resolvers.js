@@ -1,5 +1,8 @@
 const resolvers = {
   Query: {
+    async allAuthors (root, args, { models }) {
+      return models.Author.findAll()
+    },
     async author (root, { id }, { models }) {
       return models.Author.findById(id)
     },
