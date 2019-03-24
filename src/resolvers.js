@@ -5,7 +5,7 @@ const resolvers = {
     },
 
     async author (root, { id }, { models }) {
-      return models.Author.findById(id)
+      return models.Author.findByPk(id)
     },
 
     async allPosts (root, args, { models }) {
@@ -13,7 +13,7 @@ const resolvers = {
     },
 
     async post (root, { id }, { models }) {
-      return models.Post.findById(id)
+      return models.Post.findByPk(id)
     }
   },
 
