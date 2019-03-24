@@ -1,0 +1,21 @@
+{
+  "name": "graphql-server-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "db:migration": "./node_modules/.bin/sequelize db:migrate",
+    "db:drop": "./node_modules/.bin/sequelize db:migrate:undo:all",
+    "db:seed": "./node_modules/.bin/sequelize db:seed:all",
+    "server": "node ./src/index.js"
+  },
+  "repository": "https://github.com/huyb1991/graphql-server-example.git",
+  "author": "Huy Nguyen <huyb.1991@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-server": "^2.4.8",
+    "graphql": "^14.1.1",
+    "sequelize": "^5.1.1",
+    "sequelize-cli": "^5.4.0",
+    "sqlite3": "^4.0.6"
+  }
+}
