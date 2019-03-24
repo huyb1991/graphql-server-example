@@ -35,6 +35,8 @@ const typeDefs = gql`
       title: String!
       content: String!
     ): Post!
+
+    deletePost(id: Int!): Post!
   }
 `
 
