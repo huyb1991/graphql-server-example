@@ -19,6 +19,8 @@ Thanks [dbdiagram](https://dbdiagram.io/) for online tool create database models
 
 ## Guide
 
+**Note**: Create SQLite file (if it not exist) at: `database/db.sqlite`
+
 1. Install dependencies: `yarn install`
 2. Migration DB: `yarn db:migration`
 3. Seed data: `yarn db:seed`
