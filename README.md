@@ -2,6 +2,13 @@
 
 > Simple GraphQL server with Apollo supporting Query and Mutation
 
+Tech stacks:
+
+- [GraphQL](https://graphql.org/)
+- [Apollo Server](https://www.apollographql.com/docs/apollo-server/)
+- [SQLite 3](https://www.sqlite.org/index.html)
+- [Sequelize](http://docs.sequelizejs.com/)
+
 ## Database Models
 
 Database relationship: `one-to-many`
