@@ -14,10 +14,6 @@ module.exports = {
       },
       content: {
         type: Sequelize.TEXT
-      },
-      authorId: {
-        allowNull: false,
-        type: Sequelize.INTEGER
       }
     });
   },
