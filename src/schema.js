@@ -6,12 +6,14 @@ const typeDefs = gql`
     name: String!
     avatar: String!
     description: String
+    posts: [Post!]!
   }
 
   type Post {
     id: Int!
     title: String!
     content: String!
+    author: Author!
   }
 
   type Query {

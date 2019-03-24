@@ -46,6 +46,18 @@ const resolvers = {
       .catch(err => console.log(err))
     },
   },
+
+  Author: {
+    async posts(author) {
+      return author.getPosts()
+    }
+  },
+
+  Post: {
+    async author(post) {
+      return post.getAuthor()
+    }
+  }
 }
 
 module.exports = resolvers
