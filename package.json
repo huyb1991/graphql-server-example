@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "db:migration": "./node_modules/.bin/sequelize db:migrate",
+    "db:drop": "./node_modules/.bin/sequelize db:migrate:undo:all",
     "db:seed": "./node_modules/.bin/sequelize db:seed:all",
     "server": "node ./src/index.js"
   },
