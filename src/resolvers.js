@@ -26,6 +26,14 @@ const resolvers = {
       })
     },
 
+    async deleteAuthor (root, { id }, { models }) {
+      return models.Author.destroy({
+        where: { id }
+      })
+      .then(() => ({ id }))
+      .catch(err => console.log(err))
+    },
+
     async createPost (root, { authorId, title, content }, { models }) {
       return models.Post.create({ authorId, title, content })
     }

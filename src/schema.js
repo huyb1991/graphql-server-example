@@ -28,6 +28,8 @@ const typeDefs = gql`
       description: String
     ): Author!
 
+    deleteAuthor(id: Int!): Author!
+
     createPost(
       authorId: Int!
       title: String!
