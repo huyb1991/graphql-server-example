@@ -15,6 +15,9 @@ const typeDefs = gql`
   }
 
   type Query {
+    author(id: Int!): Author
+    allPosts: [Post!]!
+    post(id: Int!): Post
   }
 
   type Mutation {
