@@ -5,7 +5,10 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
       type: DataTypes.STRING
     },
-    content: DataTypes.TEXT
+    content: {
+      allowNull: false,
+      type: DataTypes.TEXT
+    }
   }, {});
 
   Post.associate = function(models) {
