@@ -10,6 +10,19 @@ const resolvers = {
       return models.Post.findById(id)
     }
   },
+
+  Mutation: {
+    async createAuthor (root, { name, avatar, description }, { models }) {
+      return models.Author.create({
+        name,
+        avatar,
+        description,
+      })
+    },
+    async createPost (root, { authorId, title, content }, { models }) {
+      return models.Post.create({ authorId, title, content })
+    }
+  },
 }
 
 module.exports = resolvers
