@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
 
   Post.associate = function(models) {
     // associations can be defined here
-    Recipe.belongsTo(models.Author, { foreignKey: 'authorId' })
+    Post.belongsTo(models.Author, { foreignKey: 'authorId' })
   };
 
   return Post;
