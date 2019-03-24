@@ -15,14 +15,19 @@ const typeDefs = gql`
   }
 
   type Query {
-    allAuthors: [Authors!]!
+    allAuthors: [Author!]!
     author(id: Int!): Author
     allPosts: [Post!]!
     post(id: Int!): Post
   }
 
   type Mutation {
-    createAuthor(name: String!, avatar: String!, description: String): Author!
+    createAuthor(
+      name: String!
+      avatar: String!
+      description: String
+    ): Author!
+
     createPost(
       authorId: Int!
       title: String!
