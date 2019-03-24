@@ -10,8 +10,8 @@ const typeDefs = gql`
 
   type Post {
     id: Int!
-    title: String
-    content: String
+    title: String!
+    content: String!
   }
 
   type Query {
@@ -21,6 +21,12 @@ const typeDefs = gql`
   }
 
   type Mutation {
+    createAuthor(name: String!, avatar: String!, description: String): Author!
+    createPost(
+      authorId: Int!
+      title: String!
+      content: String!
+    ): Post!
   }
 `
 
