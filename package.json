@@ -1,0 +1,13 @@
+{
+  "name": "graphql-server-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/huyb1991/graphql-server-example.git",
+  "author": "Huy Nguyen <huyb.1991@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "sequelize": "^5.1.1",
+    "sequelize-cli": "^5.4.0",
+    "sqlite3": "^4.0.6"
+  }
+}
