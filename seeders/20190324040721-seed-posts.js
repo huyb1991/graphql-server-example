@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert('Post', [
+    return queryInterface.bulkInsert('Posts', [
       {
         authorId: 1,
         title: 'Why My New Blog Isn’t on Medium',
@@ -32,6 +32,6 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('Post', null, {});
+    return queryInterface.bulkDelete('Posts', null, {});
   }
 };

@@ -2,7 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert('Author', [
+    return queryInterface.bulkInsert('Authors', [
       {
         name: 'Dan Abramov',
         description: 'Working on @reactjs. Co-author of Redux and Create React App. Building tools for humans.',
@@ -22,6 +22,6 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete('Author', null, {});
+    return queryInterface.bulkDelete('Authors', null, {});
   }
 };
