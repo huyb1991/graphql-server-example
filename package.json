@@ -1,11 +1,11 @@
 {
   "name": "graphql-server-example",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "db:migration": "./node_modules/.bin/sequelize db:migrate",
-    "db:drop": "./node_modules/.bin/sequelize db:migrate:undo:all",
-    "db:seed": "./node_modules/.bin/sequelize db:seed:all",
+    "db:migration": "./node_modules/.bin/sequelize --options-path=database/options.js db:migrate",
+    "db:drop": "./node_modules/.bin/sequelize --options-path=database/options.js db:migrate:undo:all",
+    "db:seed": "./node_modules/.bin/sequelize --options-path=database/options.js db:seed:all",
     "server": "node ./src/index.js"
   },
   "repository": "https://github.com/huyb1991/graphql-server-example.git",
