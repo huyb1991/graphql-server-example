@@ -19,11 +19,12 @@ Thanks [dbdiagram](https://dbdiagram.io/) for online tool create database models
 
 ## Guide
 
-**Note**: Create SQLite file (if it not exist) at: `database/db.sqlite`
-
-1. Install dependencies: `yarn install`
-2. Migration DB: `yarn db:migration`
-3. Seed data: `yarn db:seed`
-4. Start server: `yarn server`
+1. Create SQLite file (if it not exist) at: `database/db.sqlite`
+2. Install dependencies: `yarn install`
+3. Migration DB: `yarn db:migration`
+4. Seed data: `yarn db:seed`
+5. Start server: `yarn server`
 
 Enjoy!
+
+*Note:* If you got error when you seed data (step 4), run `yarn db:drop` to drop all schema, then restart from step 3
